@@ -16,12 +16,7 @@ function FilterFormComponent(props) {
 
 
     const formik = useFormik({
-        initialValues: {
-            transactionId: "",
-            description: "",
-            currency: "",
-            type: "",
-        },
+        initialValues: props.formData,
         validationSchema: validateSchema,
         onSubmit: (values, { resetForm }) => {
             props.filterAction(values);
