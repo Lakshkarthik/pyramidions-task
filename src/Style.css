@@ -1,0 +1,265 @@
+.MainComponent {
+    background-color: #fff;
+    width: 90vw;
+    margin-top: 3vh;
+    min-height: 80vh;
+    /* display: flex; */
+    border-radius: 20px;
+    /* flex-direction: column; */
+}
+
+.TableComponent {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.TableComponent .table {
+    width: 85vw;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #d7ecff;
+}
+
+th {
+    padding: 20px 0px 20px 10px;
+    text-align: left;
+}
+
+td {
+    text-align: left;
+    padding: 15px 10px 0px 10px;
+    cursor: pointer;
+}
+tr{
+    padding-top: 20px;
+}
+
+.arrow-icon {
+    color: #00000085;
+    float: right;
+}
+
+.description-img {
+    width: 37px;
+    padding-right: 10px;
+    height: 34px;
+}
+
+.description-span {
+    padding-top: 5px;
+}
+
+.description {
+    display: flex;
+    padding-top: 20px;
+}
+
+.amount {
+    font-weight: 600;
+}
+
+.status {
+    background-color: #f9eecefa;
+    padding: 7px 15px;
+    border-radius: 20px;
+    border: 1px solid #ffc107;
+    color: #ffc107;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.account {
+    background-size: cover;
+    background-image: url('../public/background.jpg');
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.account-val {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Top Copmonent */
+
+.topFileds {
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+}
+
+/* Filter Component */
+
+.FiterComponent {
+    flex: 0.8 1;
+}
+
+.filter-count {
+    background-color: #2af5d6;
+    padding: 0px 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.filter-btn {
+    border: 2px solid #00000085;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Search Component */
+
+.SearchComponent {
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #00000085;
+    margin-top: 17px;
+    flex: 0.2;
+}
+
+.search-input,
+.search-input:focus,
+.search-input::placeholder {
+    border: #fff !important;
+    color: #00000085;
+    outline: none;
+    font-size: 14px;
+    width: 90%;
+    margin-left: 10px;
+}
+
+/* Export */
+.export {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    background-color: #2af5d6;
+    float: left;
+}
+.add-money {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    background-color: #2af5d6;
+    float: left;
+    color: #343670;
+    font-weight: 600;
+    margin-top: -20px;
+}
+
+/* Acordion */
+.acordion-content {
+    display: flex;
+    background-color: #eafbff;
+    justify-content: space-between;
+}
+
+.table-content {
+    flex: 0.6;
+}
+
+.acordion-content .table-content .header-div {
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.9;
+}
+
+.acordion-content .table-content .div-2, .div-1, .div-3{
+    flex: 0.3;
+}
+.acordion-content .table-content .header-div .head{
+    font-weight: 600;
+}
+.acordion-content .table-content .header-div .link{
+    cursor: pointer;
+    color: rgb(66,133,244);
+}
+.acordion-content .table-content .second-row{
+    margin-top: 18px;
+}
+
+/* TimeLineComponent */
+.TimeLineComponent {
+    flex: 0.3;
+}
+
+.header-content {
+    font-weight: 600;
+}
+
+.expand-content{
+    background-color: #eafbff;
+    cursor: default;
+}
+
+/* Form */
+
+.FilterFormComponent{
+    margin-bottom: 20px;
+}
+
+.form-row{
+    display: flex;
+    width: 40vw;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.css-1869usk-MuiFormControl-root{
+    margin: 0px !important;
+}
+.textField{
+    flex: 0.5;
+}
+.selectField{
+    flex: 0.4;
+}
+
+.clear-all-btn,  .apply-btn {
+    border: 2px solid #2af5d6;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #343670;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.apply-btn{
+    background-color: #2af5d6;
+}
+
+.filter-btns{
+    display: flex;
+    width: 40vw;
+    justify-content: right;
+}
+
+.filter-form-head{
+    font-weight: 600;
+}

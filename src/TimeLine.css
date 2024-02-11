@@ -1,0 +1,84 @@
+.wrapper {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.steps {
+  max-width: 300px;
+  /* margin: 0 auto; */
+}
+
+.step {
+  display: flex;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 18px;
+    height: 0;
+    width: 3px;
+    background-color: #2af5d6 ;
+  }
+
+  .info {
+    margin: 0px 0 20px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+
+  .text {
+    font-size: 12px;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  &:not(:last-child) {
+    &:after {
+      height: 75%;
+    }
+   
+  }
+}
+
+.pending{
+  &:after {    
+    background-color: #343670 ;
+  }
+}
+
+.number {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  background-color: #343670;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 20px;
+
+  &.completed {
+    background-color: #2af5d6;
+  }
+
+  .tick-svg {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+
+    path {
+      fill: #343670;
+      font-weight: 600;
+    }
+  }
+}
